@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_-ihPEI4AEeiMYIeVKM3RoQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_nKQCkJUbEeiqzpCPWEeq1w" comment="Account Record Id" name="AccId" prompt="AccId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_nKQCkZUbEeiqzpCPWEeq1w" comment="Contact Record Id" name="ConId" prompt="ConId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_nKQCkpUbEeiqzpCPWEeq1w" comment="Holistic Application Id" name="HAId" prompt="HAId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_nKQCk5UbEeiqzpCPWEeq1w" comment="Inserted HA App Id" name="InsertedHAId" prompt="InsertedHAId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_VZ5vsJqoEeiJQIV1kW33EQ" comment="Source Org URL" name="SourceURL" prompt="SourceURL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_VZ6WwJqoEeiJQIV1kW33EQ" comment="Source Org Username" name="SourceUID" prompt="SourceUID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_VZ6WwZqoEeiJQIV1kW33EQ" comment="Source Org Password" name="SourcePWD" prompt="SourcePWD?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_VZ6WwpqoEeiJQIV1kW33EQ" comment="Source Org Security Key" name="SourceSK" prompt="SourceSK?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_C1g8kJqqEeiJQIV1kW33EQ" comment="Target Org URL" name="TargetURL" prompt="TargetURL?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_C1g8kZqqEeiJQIV1kW33EQ" comment="Target Org UID" name="TargetUID" prompt="TargetUID?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_C1g8kpqqEeiJQIV1kW33EQ" comment="Target Org Password" name="TargetPWD" prompt="TargetPWD?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_C1g8k5qqEeiJQIV1kW33EQ" comment="Target Org Security Key" name="TargetSK" prompt="TargetSK?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_0LpRgJ99EeilXf0G2CEOdQ" comment="Case SFDC Id" name="CaseId" prompt="CaseId?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
