@@ -1,0 +1,75 @@
+extends layout
+
+block content
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+  script(src="/javascripts/main.js")
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2  
+        .heading-text CASE COPY
+        div#loader.overlay
+         .loader
+        .parent-wrap
+         form.form-wrapr
+          ul
+           label.head-org Source Credentials
+            li.form-group
+              label(for='namesource') Username:
+              input#namesource.form-control(type='text', name='namesource')
+            li.form-group
+              label(for='pwsource') Password:
+              input#pwsource.form-control(type='password', name='passwordsource')
+            li.form-group
+              label(for='stsource') Security Token:
+              input#stsource.form-control(type='text', name='sectokensource')
+            li.form-group
+              label(for='urlsource') Domain URL:
+              input#urlsource.form-control(type='text', name='urlsource')
+            .form-group
+             input#errorsource.error-msg(name='errorsource', value='REQUIRED:Please enter Source credentials')
+         form.form-img
+          img(src="http://localhost:3000/images/arrowm.png", alt="Copy", class='img-copy')
+         form.form-wrapr
+          ul
+           label.head-org Target Credentials
+            li.form-group
+              label(for='nametarget') Username:
+              input#nametarget.form-control(type='text', name='nametarget')
+            li.form-group
+              label(for='pwtarget') Password:
+              input#pwtarget.form-control(type='password', name='passwordtarget')
+            li.form-group
+              label(for='sttarget') Security Token:
+              input#sttarget.form-control(type='text', name='sectokentarget')
+            li.form-group
+              label(for='urltarget') Domain URL:
+              input#urltarget.form-control(type='text', name='urltarget')
+            .form-group
+             input#errortarget.error-msg(name='errortarget', value='REQUIRED:Please enter Target credentials')
+      .col-md-6.col-md-offset-3
+        form.form-wrapr
+          li.form-group
+            label.control-label.requiredField(for='objectName') Object Name
+            select#objectName.select.form-control.input-lg(form='addObject', name='objectName')
+              option(value='0', selected='') -- Select --
+              option(value='Holistic_Application__c', selected =true) Holistic Application
+          li.form-group
+            label(for='salesforceid') Source Salesforce Id:
+            input#salesforceid(type='text', name='salesforceid', value='', maxlength='18',  required=true)
+          li.form-group
+            label(for='caseid') Target Case Id:
+            input#caseid(type='text', name='caseid', value='', maxlength='18',  required=true)
+          li.form-group
+            label(for='contactid') Target Contact Id:
+            input#contactid(type='text', name='contactid', value='', maxlength='18',  required=true)
+          .form-group
+           input#errorId.error-msg(name='errormsg', value='Please enter a valid 18 character Salesforce ID')
+          .form-group
+            button#myButton.btn.btn-primary(type='button')
+              span Copy 
+          div.form-group.error-set
+           span#error
+          div.form-group.result-set
+           span#success
+
